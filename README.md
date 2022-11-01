@@ -29,16 +29,16 @@ The script tags all formatting in comments with the following tagging system:
 
 ![indesign-vorher-nachher-768x365](https://user-images.githubusercontent.com/7114561/194847177-5865c516-faa9-43cb-be7b-e69728c6580f.gif)
 
-The following GREP can serve as a possible starting point:
+The following GREP, which finds all possible tags, can serve as a possible starting point:
 
-*GREP Search:* `\{\{([biusbpan\d-]+\}\})(.+)\{\{/\1`
+*GREP Search:* `\{\{([biusbpan\d-]+\}\})(.+?)\{\{/\1`\
 *GREP Replace:* `$2`
 
 This will jump one at a time from one occurrence of the format tags to the next. The GREP only deletes the format tags. As a workflow, steps 1-3 would repeat until no more format tags are found:
 
 1. Jump to the next occurrence.
 2. Replace.
-3. Draw by hand with the correct character style sheet.
+3. Apply the correct character style sheet.
 
 ## General installation instructions
 This Acrobat script will only work when placed in one of the Acrobat JavaScript folders.
@@ -104,9 +104,9 @@ Dieses Skript zeichnet alle Formatierungen in den Kommentaren nach dem folgenden
 
 ![indesign-vorher-nachher-768x365](https://user-images.githubusercontent.com/7114561/194847177-5865c516-faa9-43cb-be7b-e69728c6580f.gif)
 
-Als eine mögliche Basis kann dieser GREP dienen:
+Als eine mögliche Basis kann dieser GREP dienen, der alle möglichen Tags findet:
 
-*GREP Search:* `\{\{([biusbpan\d-]+\}\})(.+)\{\{/\1`
+*GREP Search:* `\{\{([biusbpan\d-]+\}\})(.+?)\{\{/\1`\
 *GREP Replace:* `$2`
 
 Damit springen Sie einzeln von einem Vorkommen der Format-Tags zum nächsten. Der GREP löscht lediglich die Format-Tags. Als Arbeitsablauf würden sich die Schritte 1–3 so lange wiederholen bis keine Format-Tags mehr gefunden werden:
