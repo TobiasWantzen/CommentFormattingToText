@@ -31,7 +31,7 @@ The script tags all formatting in comments with the following tagging system:
 
 The following GREP, which finds all possible tags, can serve as a possible starting point:
 
-*GREP Search:* `\{\{([biusbpan\d-]+\}\})(.+?)\{\{/\1`\
+*GREP Search:* `\{\{([biusbpan\d-]+\}\})(.+?)\{\{/\1\}\}` \
 *GREP Replace:* `$2`
 
 This will jump one at a time from one occurrence of the format tags to the next. The GREP only deletes the format tags. As a workflow, steps 1-3 would repeat until no more format tags are found:
@@ -106,7 +106,7 @@ Dieses Skript zeichnet alle Formatierungen in den Kommentaren nach dem folgenden
 
 Als eine mögliche Basis kann dieser GREP dienen, der alle möglichen Tags findet:
 
-*GREP Search:* `\{\{([biusbpan\d-]+\}\})(.+?)\{\{/\1`\
+*GREP Search:* `\{\{([biusbpan\d-]+\}\})(.+?)\{\{/\1\}\}` \
 *GREP Replace:* `$2`
 
 Damit springen Sie einzeln von einem Vorkommen der Format-Tags zum nächsten. Der GREP löscht lediglich die Format-Tags. Als Arbeitsablauf würden sich die Schritte 1–3 so lange wiederholen bis keine Format-Tags mehr gefunden werden:
