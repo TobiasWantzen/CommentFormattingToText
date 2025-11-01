@@ -25,9 +25,9 @@ The script tags all formatting in comments with the following tagging system:
 
 ![acrobat-vorher-nachher-1-768x365](https://user-images.githubusercontent.com/7114561/194847127-63414122-b676-485e-ba18-3abeb416b81a.gif)
 
-**In InDesign** the formatting tags can be searched and corrected after the correction execution either by hand or with GREP.
-
 ![indesign-vorher-nachher-768x365](https://user-images.githubusercontent.com/7114561/194847177-5865c516-faa9-43cb-be7b-e69728c6580f.gif)
+
+**In InDesign** the formatting tags can be searched and corrected after the correction execution either by hand or with GREP.
 
 The following GREP, which finds all possible tags, can serve as a possible starting point:
 
@@ -100,9 +100,9 @@ Dieses Skript zeichnet alle Formatierungen in den Kommentaren nach dem folgenden
 
 ![acrobat-vorher-nachher-1-768x365](https://user-images.githubusercontent.com/7114561/194847127-63414122-b676-485e-ba18-3abeb416b81a.gif)
 
-**In InDesign** können die Formatierungs-Tags nach der Korrekturausführung entweder von Hand oder per GREP gesucht und korrigiert werden.
-
 ![indesign-vorher-nachher-768x365](https://user-images.githubusercontent.com/7114561/194847177-5865c516-faa9-43cb-be7b-e69728c6580f.gif)
+
+**In InDesign** können die Formatierungs-Tags nach der Korrekturausführung entweder von Hand oder per GREP gesucht und korrigiert werden.
 
 Als eine mögliche Basis kann dieser GREP dienen, der alle möglichen Tags findet:
 
