@@ -23,9 +23,9 @@ The script tags all formatting in comments with the following tagging system:
 - Multiple formattings are tied together, separated with a "-", e.g. {{b-i}}text in bold and italic{{/b-i}}.
 - If the font-weight is not 400 (= regular), the weight will be added to the b tag (700 = bold will not output a number), e.g. `{{b600}}text in medium{{/b600}}`, `{{b}}text in bold{{/b}}`.
 
-![acrobat-vorher-nachher-1-768x365](https://user-images.githubusercontent.com/7114561/194847127-63414122-b676-485e-ba18-3abeb416b81a.gif)
+![Arcobat screenshot: before and after the script run](https://user-images.githubusercontent.com/7114561/194847127-63414122-b676-485e-ba18-3abeb416b81a.gif "Arcobat: before and after the script run")
 
-![indesign-vorher-nachher-768x365](https://user-images.githubusercontent.com/7114561/194847177-5865c516-faa9-43cb-be7b-e69728c6580f.gif)
+![Indesign screenshot: before and after the script run](https://user-images.githubusercontent.com/7114561/194847177-5865c516-faa9-43cb-be7b-e69728c6580f.gif "Indesign: before and after the script run")
 
 **In InDesign** the formatting tags can be searched and corrected after the correction execution either by hand or with GREP.
 
@@ -98,9 +98,9 @@ Dieses Skript zeichnet alle Formatierungen in den Kommentaren nach dem folgenden
 - Mehrfachauszeichnungen werden durch ein "-" getrennt zusammengehaengt, z.B. {{b-i}}Text in halbfett and kursiv{{/b-i}}.
 - Wenn der Fettungsgrad der Schrift nicht 400 (= regular) ist, wird der Fettungsgrad an das b-Tag angefuegt (700 = halbfett/bold wird nicht nummerisch ausgegeben), z.B. `{{b600}}Text in viertelfett/semi-bold{{/b600}}`, `{{b}}Text in halbfett/bold{{/b}}`.
 
-![acrobat-vorher-nachher-1-768x365](https://user-images.githubusercontent.com/7114561/194847127-63414122-b676-485e-ba18-3abeb416b81a.gif)
+![Arcobat-Screenshot: vor und nach dem Scriptlauf](https://user-images.githubusercontent.com/7114561/194847127-63414122-b676-485e-ba18-3abeb416b81a.gif "Arcobat: vor und nach dem Scriptlauf")
 
-![indesign-vorher-nachher-768x365](https://user-images.githubusercontent.com/7114561/194847177-5865c516-faa9-43cb-be7b-e69728c6580f.gif)
+![InDesign-Screenshot: vor und nach dem Scriptlauf](https://user-images.githubusercontent.com/7114561/194847177-5865c516-faa9-43cb-be7b-e69728c6580f.gif "InDesign: vor und nach dem Scriptlauf")
 
 **In InDesign** können die Formatierungs-Tags nach der Korrekturausführung entweder von Hand oder per GREP gesucht und korrigiert werden.
 
