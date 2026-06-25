@@ -40,23 +40,41 @@ This will jump one at a time from one occurrence of the format tags to the next.
 2. Replace.
 3. Apply the correct character style sheet.
 
-## General installation instructions
-This Acrobat script will only work when placed in one of the Acrobat JavaScript folders.
+## Installation instructions
+This Acrobat script will only work when placed in one of the Acrobat `JavaScripts` folders.
 
 *For Windows:*
 
+Install system-wide:
 * Place the script file "ToggleCover.js" in this folder (or the same folder in the full version):\
   `C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\Javascripts\`
 * Restart Acrobat.
 
+Install in user-specific folder (recommended!):
+* Place the script file "ToggleCover.js" in this folder (or the same folder in the full version):\
+  `C:\Users\[YourUsername]\AppData\Roaming\Adobe\Acrobat\Privileged\DC\JavaScripts`
+  (Alternatively, without the "Privileged" folder: `...\Adobe\Acrobat\DC\JavaScripts`)
+* Restart Acrobat.
+
+(Tip: The AppData folder is hidden by default in Windows. You can simply type `%appdata%` into the address bar of the Windows Explorer and press Enter to jump straight into the Roaming folder.)
+
 *For Mac:*
 
+Install system-wide:
 * In Finder, go to your Acrobat.app in the Applications folder.
 * Right-click on the Acrobat.app and select "View Package Contents" to view the inside of the app package.
 * Inside the app navigate to this directory:\
   `Acrobat.app/Contents/Resources/JavaScripts/`
 * Place the script file "ToggleCover.js" there.
 * Restart Acrobat.
+
+Install in user-specific folder (recommended!):
+* In Finder navigate to this directory:\
+  `~/Library/Application Support/Adobe/Acrobat/DC/JavaScripts/`
+* Place the script file "ToggleCover.js" there.
+* Restart Acrobat.
+
+Tip: The Library folder is hidden by default on Mac. In Finder, click on Go in the top menu bar, hold down the Option/Alt key (⌥), and the `Library` entry will appear in the drop-down menu.
 
 If this does not work, you can find out the directory on your computer as follows:
 
@@ -67,9 +85,11 @@ If this does not work, you can find out the directory on your computer as follow
 app.getPath("app","javascript");
 app.getPath("user");
 ```
-This way you will know under which path you can place the script on your computer. In the user folder you may have to create the folder "JavaScripts".
+This way you will know under which path you can place the script on your computer.
 
-The "user" folder is shared by Acrobat and Acrobat Reader. Scripts installed there are only available to the user. If they are installed in the "application" folder, the scripts are available to all users.
+If the folder `JavaScripts` does not exist in your folder structure, simply create it by yourself.
+
+The `user` folder is shared by Acrobat and Acrobat Reader. Scripts installed there are only available to the user. If they are installed in the `application` folder, the scripts are available to all users.
 
 
 
@@ -116,32 +136,46 @@ Damit springen Sie einzeln von einem Vorkommen der Format-Tags zum nächsten. De
 3. Zeichne per Hand mit der korrekten Zeichenstilvorlage aus.
 
 ## Installationsanleitung
-Das Script funktioniert nur, wenn Sie es in einem der Acrobat-JavaScript-Ordner platzieren:
+Dieses Acrobat-Skript funktioniert nur, wenn es in einem der Acrobat `JavaScripts`-Ordner abgelegt wird.
 
 *Für Windows:*
 
-* Legen Sie die Scriptdatei "ToggleCover.js" in diesen Ordner:\
-  `C:\Programme (x86)\Adobe\Acrobat DC\Reader\Javascripts\`
+Systemweit installieren:
+* Legen Sie die Skriptdatei "ToggleCover.js" in diesem Ordner (oder im entsprechenden Ordner der Vollversion) ab:\
+  `C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\Javascripts\`
 * Starten Sie Acrobat neu.
+
+Im benutzerspezifischen Ordner installieren (empfohlen!):
+* Legen Sie die Skriptdatei "ToggleCover.js" in diesem Ordner (oder im entsprechenden Ordner der Vollversion) ab:\
+  `C:\Users\[IhrBenutzername]\AppData\Roaming\Adobe\Acrobat\Privileged\DC\JavaScripts`
+  (Alternativ ohne den "Privileged"-Ordner: `...\Adobe\Acrobat\DC\JavaScripts`)
+* Starten Sie Acrobat neu.
+
+(Tipp: Der Ordner AppData ist unter Windows standardmäßig ausgeblendet. Sie können einfach `%appdata%` in die Adressleiste des Windows-Explorers eingeben und Enter drücken, um direkt in den Roaming-Ordner zu springen.)
 
 *Für Mac:*
 
-* Gehen Sie im Finder zu Ihrer Acrobat.app im Programme-Ordner.
-* Klicken Sie mit der rechten Maustaste auf die Acrobat.app und wählen Sie »Paketinhalt anzeigen«, um das Innere der Applikation anzuzeigen.
-* Navigieren Sie innerhalb der App in das Verzeichnis:\
+Systemweit installieren:
+* Gehen Sie im Finder zu Ihrer Acrobat.app im Ordner "Programme".
+* Machen Sie einen Rechtsklick auf die Acrobat.app und wählen Sie "Paketinhalt einblenden", um das Innere des App-Pakets anzuzeigen.
+* Navigieren Sie innerhalb der App zu diesem Verzeichnis:\
   `Acrobat.app/Contents/Resources/JavaScripts/`
-* Platzieren Sie die Scriptdatei "ToggleCover.js" dort
+* Legen Sie die Skriptdatei "ToggleCover.js" dort ab.
 * Starten Sie Acrobat neu.
 
-Sollte das nicht funktionieren, können Sie das Verzeichnis auf Ihrem Rechner wie folgt ermitteln:
+Im benutzerspezifischen Ordner installieren (empfohlen!):
+* Navigieren Sie im Finder zu diesem Verzeichnis:\
+  `~/Library/Application Support/Adobe/Acrobat/DC/JavaScripts/`
+* Legen Sie die Skriptdatei "ToggleCover.js" dort ab.
+* Starten Sie Acrobat neu.
 
-* Tasten Sie Ctrl+J (Windows) bzw. Cmd+J (Mac), um die Konsole aufzurufen.
-* Tippen Sie *eine* der folgenden Zeilen ein und bestätigen Sie mit Strg+Return (Windows) bzw. Befehl+Return (Mac) oder der Enter-Taste des Nummernfelds:
+Tipp: Der Library-Ordner ist auf dem Mac standardmäßig versteckt. Klicken Sie im Finder im oberen Menü auf "Gehe zu", halten Sie die Option/Alt-Taste (⌥) gedrückt, und der Eintrag `Library` erscheint im Dropdown-Menü.
+
+Wenn das nicht funktioniert, können Sie das Verzeichnis auf Ihrem Computer wie folgt herausfinden:
+
+* Drücken Sie Strg+J (Windows) oder Cmd+J (Mac), um die Konsole zu öffnen.
+* Tippen Sie *eine* der folgenden Zeilen ein und bestätigen Sie mit Strg+Enter (Windows) bzw. Cmd+Enter (Mac) oder der Enter-Taste des Ziffernblocks:
 
 ```javascript
 app.getPath("app","javascript");
 app.getPath("user");
-```
-Auf diese Weise erfahren Sie, unter welchem Pfad Sie das Script auf Ihrem Rechner ablegen können. Im user-Ordner müssen Sie evtl. den Ordner „JavaScripts“ noch neu anlegen.
-
-Den »user«-Ordner teilen sich übrigens Acrobat und Acrobat Reader. Dort installierte Scripte stehen ausschließlich dem User selbst zur Verfügung. Bei einer Installation im »application«-Ordner stehen die Scripte allen Usern zur Verfügung.
